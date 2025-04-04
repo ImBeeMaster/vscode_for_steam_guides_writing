@@ -1,0 +1,51 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+shift+b",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus || editorHasSelection",
+        "args": { "snippet": "[b]${TM_SELECTED_TEXT}$0[/b]" }
+    },
+    {
+        "key": "alt+shift+u",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus || editorHasSelection",
+        "args": { "snippet": "[u]${TM_SELECTED_TEXT}$0[/u]" }
+    },
+    {
+        "key": "alt+shift+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus || editorHasSelection",
+        "args": { "snippet": "[i]${TM_SELECTED_TEXT}$0[/i]" }
+    },
+    {
+        "key": "alt+shift+l",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus || editorHasSelection",
+        "args": { "snippet": "[url=${TM_SELECTED_TEXT}]$0[/url]" }
+    },
+    {
+        "key": "alt+shift+h",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": { "name": "SteamGuideHorizontalLine" }
+    },
+    {
+        "key": "alt+shift+1",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus || editorHasSelection",
+        "args": { "snippet": "[h1]${TM_SELECTED_TEXT}$0[/h1]" }
+    },
+    {
+        "key": "alt+shift+2",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus || editorHasSelection",
+        "args": { "snippet": "[h2]${TM_SELECTED_TEXT}$0[/h2]" }
+    },
+    {
+        "key": "alt+shift+3",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus || editorHasSelection",
+        "args": { "snippet": "[h3]${TM_SELECTED_TEXT}$0[/h3]" }
+    },
+]

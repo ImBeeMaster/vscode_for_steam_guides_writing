@@ -1,0 +1,71 @@
+{
+
+    "SteamGuideHorizontalLine": {
+        "prefix": ["hr"],
+        "body": ["[hr][/hr]\n"],
+        "description": "Render a horizontal rule."
+      },
+    "SteamGuideTable": {
+      "prefix": ["table"],
+      "body": [
+        "[table]",
+            "\t[tr]",
+                "\t\t[th]h1${1}[/th]", 
+                "\t\t[th]h2${2}[/th]",
+            "\t[/tr]",
+            "\t[tr]",
+                "\t\t[td]1${3}[/td]",
+                "\t\t[td]a${4}[/td]",
+            "\t[/tr]",
+            "\t[tr]",
+                "\t\t[td]2${5}[/td]",
+                "\t\t[td]b${6}[/td]",
+            "\t[/tr]",
+        "[/table]\n$0"
+      ],
+      "description": "A table with 2 columns and 2 rows."
+    },
+    "SteamGuideTableRow": {
+      "prefix": ["tr"],
+      "body": ["[tr]","\t$0", "[/tr]\n"],
+      "description": "A table row."
+    },
+    "SteamGuideTableHeader": {
+      "prefix": ["th"],
+      "body": ["[th]$0[/th]\n"],
+      "description": "A table header."
+    },
+    "SteamGuideTableData": {
+      "prefix": ["td"],
+      "body": ["[td]$0[/td]\n"],
+      "description": "A table elements."
+    },
+    "SteamGuideList": {
+        "prefix": ["list", "lst"],
+        "body": [
+          "[list]",
+          "\t[*]${1}",
+          "\t[*]${2}",
+          "\t[*]${3}",
+          "[/list]\n"
+        ],
+        "description": "A bulleted list with 3 items."
+      },
+    "SteamGuideOList": {
+      "prefix": ["olist", "olst"],
+      "body": [
+        "[olist]",
+        "\t[*]${1}",
+        "\t[*]${2}",
+        "\t[*]${3}",
+        "[/olist]\n"
+      ],
+      "description": "An ordered  list with 3 items."
+    },
+    "SteamGuideCode": {
+      "prefix": ["code"],
+      "body": ["[code] $0 [/code]"],
+      "description": "An ordered  list with 3 items."
+    }
+}
+
