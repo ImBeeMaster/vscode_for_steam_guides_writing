@@ -25,6 +25,12 @@
         "args": { "snippet": "[url=${TM_SELECTED_TEXT}]$0[/url]" }
     },
     {
+        "key": "alt+shift+c",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus || editorHasSelection",
+        "args": { "snippet": "[code]${TM_SELECTED_TEXT}$0[/code]" }
+    },
+    {
         "key": "alt+shift+h",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus",
